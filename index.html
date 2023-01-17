@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Lemonada:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>مواقيت الصلاة</title>
+</head>
+<body>
+    <header>
+        <h1>مواقيت الصلاة</h1>
+    </header>
+        <main>
+           
+            <div class="box">
+                <p> صلاة الفجر</p>
+                <span id="fj"></span>
+            </div>
+            <div class="box">
+                <p>الشروق</p>
+                <span id="sh"></span>
+            </div>
+            <div class="box">
+                <p>صلاة الظهر</p>
+                <span id="her"></span>
+            </div>
+            <div class="box">
+                <p> صلاةالعصر</p>
+                <span id="asr"></span>
+            </div>
+            <div class="box">
+                <p>صلاة المغرب</p>
+                <span id="mag"></span>
+            </div>
+            <div class="box">
+                <p>صلاة العشاء</p>
+                <span id="esh"></span>
+            </div>
+          
+        </main>
+        <aside>
+             <div class="date">
+                 <div>المدينة :<span id="city"></span></div>
+                 <div>اليوم :  <span id="day"></span></div>
+                 <div>الشهر :  <span id="month"></span></div>
+                 <div>السنة :  <span id="year"></span></div>
+             </div>
+             <div class="select-city">
+                <h2>قم بتحديد المدينة</h2>
+                <form>
+                    <select name="citys" id="citys" onchange="selectedCity()" >
+                      <option value="الخرطوم">الخرطوم</option>
+                      <option value="سنار">سنار</option>
+                      <option value="بورتسودان">بورتسودان</option>
+                      <option value="مدني">مدني</option>
+                      <option value="نهرالنيل">نهر النيل</option>
+                      <option value="كسلا">كسلا</option>
+                    </select>
+                </form>  
+             </div>
+        </aside>
+        <script src="./node_modules/axios/dist/axios.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

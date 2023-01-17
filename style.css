@@ -1,0 +1,79 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+direction: rtl;
+ background: linear-gradient(to left, rgb(182, 100, 219), rgb(199, 86, 247) 50%, rgb(172, 42, 241) 85%, rgb(15, 14, 15) 75%);
+ font-family: 'Lemonada', cursive;
+ height: 100vh;
+ overflow: hidden;
+}
+header h1{
+  text-align: center;
+  color: #fff;
+}
+main{
+    margin-top: 1.5rem;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+main .box{
+    padding: 1rem;
+    margin: 0.5rem auto;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #fff;
+    min-width: 300px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}  
+aside{
+    width: 40%;
+    height: auto;
+    position:fixed;
+    top:10%;
+    right: 10%;
+}
+aside .date div{
+    width: 200px;
+    padding: 10px;
+    margin: 10px;
+    color: #fff;
+   font-weight: 700;
+   border-bottom: 2px dotted #fff;
+}
+.select-city{
+    margin:20px auto;
+    padding: 10px;
+    color: #fff;
+}
+
+.select-city form select{
+    width: 250px;
+    outline: none;
+    border-radius: 30px;
+    padding: 10px;
+    font-size: 25px;
+    font-weight: 400;
+    background-color:inherit;
+    border-color: #fff;
+    color: rgb(206, 206, 206);
+    margin-top: 10px;
+}
+
+@media (max-width: 990px) {
+body{
+    overflow: visible;
+}
+    aside{
+        width:100%;
+        height: auto;
+    position: relative;
+    }
+}
